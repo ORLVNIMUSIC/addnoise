@@ -83,6 +83,7 @@ header {
   position: absolute;
   bottom: 30px;
   right: 18px;
+  pointer-events: none;
 }
 
 .content > .littleItem {
@@ -99,6 +100,7 @@ header {
 }
 
 .popular > .popularButton {
+  transition: all 0.1s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +121,32 @@ header {
   background: #005e9e;
   border-radius: 6px;
   color: #fff;
+}
+
+.popular > .popularButton:hover {
+  background-color: #0b6fb1;
+}
+
+.popularButton:hover span {
+  animation: wiggle 0.2s linear 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-0.02turn);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(0.02turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .headerTop {
@@ -155,6 +183,10 @@ header {
   color: #1f1f1f;
 }
 
+.headerBottom a:hover {
+  border-bottom: 2px solid #1f1f1f2c;
+}
+
 .headerBottom a:first-child {
   margin-left: 2px;
 }
@@ -172,6 +204,7 @@ header {
 
 .headerBottom .headerButtons:hover {
   cursor: pointer;
+  border-bottom: 2px dashed #1f1f1f2c;
 }
 
 .headerButtons > object {
@@ -195,6 +228,59 @@ header {
   align-items: center;
   margin-left: 28.5px;
   position: relative;
+}
+
+.chosenItem {
+  transition: all 0.2s linear;
+  opacity: 0;
+  transform: scale(0);
+  background: rgba(0, 94, 158, 0.91);
+  z-index: 1;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chosenItem p {
+  margin: 0;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  padding: 0;
+  margin-left: 23px;
+  width: 292px;
+}
+
+.chosenItem > p:first-child {
+  margin-top: 51px;
+  margin-bottom: 16px;
+}
+
+.littleItem:hover .chosenItem {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bigItem:hover .chosenItem {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.exitIcon {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  pointer-events: none;
 }
 
 .headerMenu:hover .headerMenuContent {
