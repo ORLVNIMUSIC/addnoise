@@ -5,21 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet' />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="headerTop"><div class="container"></div></div>
-      <div class="headerBottom"><div class="container">
-        <a href="">О компании</a>
-        <a href="">Новости</a>
-        <a href="">Сертификаты</a>
-        <a href="">Справочная информация</a>
-        <a href="">Контакты</a>
-        <div class="headerButtons"><object data="svg/request.svg"></object>Запросить КП</div>
-        <div class="headerButtons"><object data="svg/mail.svg"></object>info@cir-loc.ru</div>
-      </div></div></div>
+      <div class="headerTop">
+        <div class="container">
+          <div class="logo">
+            <object data="svg/logo.svg"></object>
+            <object data="svg/logo text.svg"></object>
+          </div>
+          <div class="headerMenuButton">
+            <object data="svg/menu icon.svg"></object>
+            <span>Каталог</span>
+          </div>
+          <div class="headerSearchBar">
+            <object data="svg/search icon.svg"></object>
+            <input
+              type="search"
+              name="searchBar"
+              placeholder="Искать: например Фитинги под приварку"
+            />
+          </div>
+          <div class="headerPhone">
+            <span>8 800 333 27 62</span>
+            <a href="">Заказать звонок</a>
+          </div>
+          <div class="headerDivider1"></div>
+          <div class="headerCity">
+            <span>Екатеринбург</span>
+            <div class="customSelect">
+              <select name="cities">
+                <option value="Выбрать город">Выбрать город</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Нижний Новгород">Нижний Новгород</option>
+                <option value="Новосибирск">Новосибирск</option>
+              </select>
+              <object data="svg/city arrow icon.svg"></object>
+            </div>
+          </div>
+          <div class="headerDivider2"></div>
+        </div>
+      </div>
+      <div class="headerBottom">
+        <div class="container">
+          <a href="">О компании</a>
+          <a href="">Новости</a>
+          <a href="">Сертификаты</a>
+          <a href="">Справочная информация</a>
+          <a href="">Контакты</a>
+          <div class="headerButtons">
+            <object data="svg/request.svg"></object>Запросить КП
+          </div>
+          <div class="headerButtons">
+            <object data="svg/mail.svg"></object>info@cir-loc.ru
+          </div>
+        </div>
+      </div>
     </header>
     <section class="popular"></section>
   </body>
