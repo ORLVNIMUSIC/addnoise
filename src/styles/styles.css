@@ -47,15 +47,52 @@ header {
 }
 
 .content > .bigItem {
+  position: relative;
+  background: linear-gradient(
+    96.91deg,
+    #f9f9f9 0.45%,
+    #fcfcfc 0.46%,
+    #fafafb 100.73%
+  );
   margin-bottom: 15px;
-  background-color: rgb(252, 201, 201);
   width: 690px;
   height: 336px;
   border-radius: 10px;
 }
 
+.content img {
+  position: absolute;
+}
+
+.itemTitle {
+  position: absolute;
+  bottom: 30px;
+  left: 18px;
+  width: 261px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+
+  color: #1f1f1f;
+}
+
+.content object {
+  position: absolute;
+  bottom: 30px;
+  right: 18px;
+}
+
 .content > .littleItem {
-  background-color: rgb(224, 206, 206);
+  position: relative;
+  background: linear-gradient(
+    96.91deg,
+    #f9f9f9 0.45%,
+    #fcfcfc 0.46%,
+    #fafafb 100.73%
+  );
   width: 333px;
   height: 336px;
   border-radius: 10px;
@@ -66,6 +103,12 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
 
   position: relative;
   top: 29px;
